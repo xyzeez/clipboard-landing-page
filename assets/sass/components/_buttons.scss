@@ -1,0 +1,22 @@
+@use 'global' as *;
+@use './mixins' as *;
+
+.btn {
+    position: relative;
+    font-family: $theme-paragraph-font;
+    font-size: 0.9rem;
+    font-weight: $bold;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+    color: $theme-white;
+    overflow: hidden;
+    box-shadow:
+            0 0.063rem 0.188rem rgba(7, 4, 57, 0.12),
+            0 0.063rem 0.125rem rgba(7, 4, 57, 0.24);
+    transition: 0.2s ease-in-out;
+
+    @include hover {
+        cursor: pointer;
+    }
+}

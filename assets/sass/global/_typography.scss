@@ -1,0 +1,11 @@
+//font-families
+$theme-font: 'Bai Jamjuree', sans-serif;
+
+//font-weights
+$normal: 400;
+$bold: 600;
+
+//theme-font-styles
+$theme-header-style: $bold clamp(1.6rem, 3.5vw, 2.51rem) $theme-font;
+$theme-subheader-style: $bold clamp(1.1rem, 3.5vw, 2.54rem) $theme-font;
+$theme-paragraph-style: $normal clamp(1rem, 3.5vw, 1.13rem) $theme-font;

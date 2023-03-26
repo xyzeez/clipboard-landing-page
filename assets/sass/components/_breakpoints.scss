@@ -1,0 +1,14 @@
+// Screen-Sizes
+$screen-size : (
+    "tablet": 48rem,
+    "tablet-xl": 62rem,
+    "desktop": 75rem,
+    "desktop-xl": 87.5rem,
+);
+
+//media-queries
+@mixin breakpoint ($size) {
+    @media screen and (min-width: map-get($screen-size, $size)) {
+        @content        
+    }
+}
