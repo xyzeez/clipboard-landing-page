@@ -26,13 +26,15 @@ Users should be able to:
 
 ### Screenshot
 
-- [Mobile](./screenshot.jpg)
+- [Mobile](./assets/images/screenshots/mobile.png)
+- [Tablet](./assets/images/screenshots/)
+- [Desktop](./assets/images/screenshots/desktop.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL here](https://www.frontendmentor.io/solutions/responsive-clipboard-landing-page-bem-sass-fKojQOgRIU)
+- Live Site URL: [URL here](https://clipboard-landing-page-femc.netlify.app/)
 
 ## My process
 
@@ -41,14 +43,15 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- SASS
+- BEM
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [The new CSS pseudo-classes explained - :is() :where() :has() | Kevin Powel - Youtube](https://www.youtube.com/watch?v=3ncFpP8GP4g)
+- [columns | mdn web docs - Blog](https://developer.mozilla.org/en-US/docs/Web/CSS/columns)
 
 ## Author
 
