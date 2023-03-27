@@ -52,6 +52,7 @@ Users should be able to:
 
 - [The new CSS pseudo-classes explained - :is() :where() :has() | Kevin Powel - Youtube](https://www.youtube.com/watch?v=3ncFpP8GP4g)
 - [columns | mdn web docs - Blog](https://developer.mozilla.org/en-US/docs/Web/CSS/columns)
+- [text-rendering | mdn web docs - Blog](https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering)
 
 ## Author
 
