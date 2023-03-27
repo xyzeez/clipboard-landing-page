@@ -117,7 +117,7 @@ header {
   padding: 1.25rem 1.88rem;
   margin-bottom: 7.5rem;
   background-color: hsl(0, 0%, 100%);
-  background-size: contain;
+  background-size: 100%;
   background-position: top;
   background-repeat: no-repeat;
   background-image: url(../images/bg-header-mobile.png);
