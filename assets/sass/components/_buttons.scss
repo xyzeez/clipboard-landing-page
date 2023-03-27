@@ -1,22 +1,55 @@
-@use 'global' as *;
+@use '../global/' as *;
 @use './mixins' as *;
+@use './breakpoints' as *;
 
 .btn {
-    position: relative;
-    font-family: $theme-paragraph-font;
-    font-size: 0.9rem;
+    font-family: $theme-font;
+    font-size: 1.13rem;
     font-weight: $bold;
-    text-align: center;
-    line-height: 1;
-    text-decoration: none;
+    line-height: 1.88rem;
+    letter-spacing: 0.0313rem;
     color: $theme-white;
-    overflow: hidden;
-    box-shadow:
-            0 0.063rem 0.188rem rgba(7, 4, 57, 0.12),
-            0 0.063rem 0.125rem rgba(7, 4, 57, 0.24);
-    transition: 0.2s ease-in-out;
+    padding: 0.69rem 4.63rem;
+    border-bottom: solid 0.25rem black;
+    border-radius: 1.88rem;
+    transition: all 0.2s ease-in-out;
+
+    &--green {
+        background-color: $theme-cyan;
+        border-bottom-color: $theme-dark-cyan;
+        box-shadow: 0rem 0.9375rem 1.875rem -0.625rem hsl(171, 52%, 58%);
+    }
+
+    &--blue {
+        background-color: $theme-blue;
+        border-bottom-color: $theme-dark-blue;
+        box-shadow: 0rem 0.9375rem 1.875rem -0.625rem hsl(233, 100%, 77%);
+    }
+
+    @include breakpoint (tablet) {
+        width: 14.19rem;
+        padding: 0.69rem 2rem;
+    }
 
     @include hover {
-        cursor: pointer;
+        &:is(:hover, :focus){
+            cursor: pointer;
+        }
+
+        &:is(:active, :visited) {
+            border-bottom-width: 0;
+        }
+
+        &--green {
+            &:is(:hover, :focus) {
+                background-color: $theme-light-cyan;
+            }
+        }
+
+        &--blue {
+            &:is(:hover, :focus) {
+                background-color: $theme-light-blue;
+            }
+        }
     }
 }

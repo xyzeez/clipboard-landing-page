@@ -1,0 +1,79 @@
+@use '../global/' as *;
+@use '../components/' as *;
+
+.section-extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7rem;
+
+    &__intro {
+        margin-bottom: 5.63rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    &__listitem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-icon {
+            margin-bottom: 2.75rem;
+        }
+
+        &-title {
+            font-size: 1.5rem;
+            font-weight: $bold;
+            color: $theme-dark-gray;
+            text-align: center;
+            letter-spacing: -0.0244rem;
+            line-height: 1.88rem;
+            margin-bottom: 0.63rem;
+        }
+
+        &-paragraph {
+            font-size: 1rem;
+            font-weight: $normal;
+            color: $theme-gray-blue;
+            text-align: center;
+            letter-spacing: 0.0075rem;
+            line-height: 1.63rem;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        margin-bottom: 7.31rem;
+
+        &__intro {
+            margin-bottom: 2.69rem;
+        }
+
+        &__list {
+            flex-direction: row;
+            gap: 1.88rem;
+        }
+
+        &__listitem {
+            &-icon {
+                margin-top: 1.56rem;
+            }
+
+            &-title {
+                margin-bottom: 1.06rem;
+            }
+
+            &-paragraph {
+                max-width: 34ch;
+                text-align: center;
+                line-height: 1.88rem;
+                letter-spacing: 0.0075rem;
+            }
+        }
+    }
+}

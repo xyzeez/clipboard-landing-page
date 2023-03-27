@@ -1,0 +1,76 @@
+@use '../global/' as *;
+@use '../components/' as *;
+
+header {
+    @include flex;
+    width: 100%;
+    padding: 1.25rem 1.88rem;
+    margin-bottom: 7.5rem;
+    background: {
+        color: $theme-white;
+        size: contain;
+        position: top;
+        repeat: no-repeat;
+        image: url(../images/bg-header-mobile.png);
+    }
+
+    @include breakpoint (tablet) {
+        background-image: url(../images/bg-header-desktop.png);
+        background-size: cover;
+        margin-bottom: 7.13rem;
+    }
+}
+
+.header {
+    &__logo {
+        margin: 6.44rem 0 3.94rem;
+    }
+
+    &__content {
+        text-align: center;
+        margin-bottom: 3.06rem;
+    }
+
+    &__title {
+        font: $theme-header-style;
+        color: $theme-dark-gray;
+        line-height: 2.5rem;
+        letter-spacing: -0.0325rem;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        font: $theme-paragraph-style;
+        color: $theme-gray-blue;
+        letter-spacing: 0.0075rem;
+        line-height: 1.63rem;
+        max-width: 45.625rem;
+    }
+
+    &__btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.44rem;
+    }
+
+    @include breakpoint (tablet) {
+        &__logo {
+            margin: 6.94rem 0 4.13rem 0;
+        }
+
+        &__title {
+            letter-spacing: -0.0469rem;
+            margin-bottom: 1.44rem;
+        }
+
+        &__paragraph {
+            line-height: 1.88rem;
+            letter-spacing: 0.0094rem;
+        }
+
+        &__btn-container {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+}

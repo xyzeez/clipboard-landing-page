@@ -1,0 +1,45 @@
+@use '../global/' as *;
+@use '../components/' as *;
+
+main {
+    @include flex;
+    max-width: 90rem;
+    margin: 0 auto;
+    gap: 2.5rem;
+    padding: 1.25rem 1.88rem;
+}
+
+.section {
+    &__title {
+        font: $theme-subheader-style;
+        color: $theme-dark-gray;
+        text-align: center;
+        letter-spacing: -0.0288rem;
+        line-height: 2.19rem;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        font-family: $theme-font;
+        font-size: 1rem;
+        font-weight: $normal;
+        text-align: center;
+        letter-spacing: 0.0075rem;
+        line-height: 1.63rem;
+        color: $theme-gray-blue;
+    }
+
+    @include breakpoint (tablet) {
+        &__title {
+            letter-spacing: -0.0369rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__paragraph {
+            max-width: 62ch;
+            font-size: 1.13rem;
+            letter-spacing: 0.0088rem;
+            line-height: 1.88rem;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@use '../global/' as *;
+@use '../components/' as *;
+
+.section-partners {
+    margin-bottom: 7.75rem;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-bottom: 3.69rem;
+
+        &-one {
+            width: 100%;
+            max-width: 8.69rem;
+        }
+
+        &-two {
+            width: 100%;
+            max-width: 7.56rem;
+            margin-bottom: 3.94rem;
+        }
+
+        &-three {
+            width: 100%;
+            max-width: 8.44rem;
+            margin-bottom: 3.56rem;
+        }
+
+        &-four {
+            width: 100%;
+            max-width: 7.06rem;
+            margin-bottom: 3.06rem;
+        }
+
+        &-five {
+            width: 100%;
+            max-width: 6.56rem;
+            margin-bottom: 0;
+        }
+    }
+
+    @include breakpoint (tablet) {
+        margin-bottom: 7.38rem;
+
+        &__list {
+            flex-direction: row;
+            align-items: center;
+            gap: 6.06rem;
+        }
+
+        &__logo {
+            margin-bottom: 0;
+            
+            &-one {
+                max-width: 10.31rem;
+            }
+
+            &-two {
+                max-width: 9rem;
+                margin-bottom: 0;
+            }
+
+            &-three {
+                max-width: 10rem;
+                margin-bottom: 0;
+            }
+
+            &-four {
+                max-width: 8.38rem;
+                margin-bottom: 0;
+            }
+
+            &-five {
+                max-width: 7.81rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
