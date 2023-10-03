@@ -67,13 +67,15 @@ address {
 }
 
 .btn {
+  display: block;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.13rem;
   font-weight: 600;
+  text-align: center;
   line-height: 1.88rem;
   letter-spacing: 0.0313rem;
   color: hsl(0, 0%, 100%);
-  padding: 0.69rem 4.63rem;
+  padding: 0.69rem 1.63rem;
   border-bottom: solid 0.25rem black;
   border-radius: 1.88rem;
   transition: all 0.2s ease-in-out;

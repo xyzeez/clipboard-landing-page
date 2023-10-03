@@ -3,78 +3,80 @@
 @use './breakpoints' as *;
 
 .btn {
-    font-family: $theme-font;
-    font-size: 1.13rem;
-    font-weight: $bold;
-    line-height: 1.88rem;
-    letter-spacing: 0.0313rem;
-    color: $theme-white;
-    padding: 0.69rem 4.63rem;
-    border-bottom: solid 0.25rem black;
-    border-radius: 1.88rem;
-    transition: all 0.2s ease-in-out;
+  display: block;
+  font-family: $theme-font;
+  font-size: 1.13rem;
+  font-weight: $bold;
+  text-align: center;
+  line-height: 1.88rem;
+  letter-spacing: 0.0313rem;
+  color: $theme-white;
+  padding: 0.69rem 1.63rem;
+  border-bottom: solid 0.25rem black;
+  border-radius: 1.88rem;
+  transition: all 0.2s ease-in-out;
+
+  &--green {
+    background-color: $theme-cyan;
+    border-bottom-color: $theme-dark-cyan;
+    box-shadow: 0rem 0.9375rem 1.875rem -0.625rem hsl(171, 52%, 58%);
+  }
+
+  &--blue {
+    background-color: $theme-blue;
+    border-bottom-color: $theme-dark-blue;
+    box-shadow: 0rem 0.9375rem 1.875rem -0.625rem hsl(233, 100%, 77%);
+  }
+
+  @include breakpoint(tablet) {
+    width: 14.19rem;
+    padding: 0.69rem 2rem;
+  }
+
+  @include hover {
+    &:is(:hover, :focus) {
+      cursor: pointer;
+    }
+
+    &:is(:active, :visited) {
+      border-bottom-width: 0;
+    }
 
     &--green {
-        background-color: $theme-cyan;
-        border-bottom-color: $theme-dark-cyan;
-        box-shadow: 0rem 0.9375rem 1.875rem -0.625rem hsl(171, 52%, 58%);
+      &:is(:hover, :focus) {
+        background-color: $theme-light-cyan;
+      }
     }
 
     &--blue {
-        background-color: $theme-blue;
-        border-bottom-color: $theme-dark-blue;
-        box-shadow: 0rem 0.9375rem 1.875rem -0.625rem hsl(233, 100%, 77%);
+      &:is(:hover, :focus) {
+        background-color: $theme-light-blue;
+      }
     }
-
-    @include breakpoint (tablet) {
-        width: 14.19rem;
-        padding: 0.69rem 2rem;
-    }
-
-    @include hover {
-        &:is(:hover, :focus){
-            cursor: pointer;
-        }
-
-        &:is(:active, :visited) {
-            border-bottom-width: 0;
-        }
-
-        &--green {
-            &:is(:hover, :focus) {
-                background-color: $theme-light-cyan;
-            }
-        }
-
-        &--blue {
-            &:is(:hover, :focus) {
-                background-color: $theme-light-blue;
-            }
-        }
-    }
+  }
 }
 
 .skip-btn {
-    position: absolute;
-    top: -100px;
-    left: 10px;
-    font-size: 1.13rem;
-    font-weight: $bold;
-    letter-spacing: 0.0313rem;
-    color: $theme-white;
-    padding: 0.8rem 1rem 1rem;
-    background-color: $theme-cyan;
-    border-bottom: solid 0.25rem $theme-light-cyan;
-    border-radius: 0 0 0.5rem 0.5rem;
-    transform: scaleY(-1);
-    transition: all 0.5s;
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  font-size: 1.13rem;
+  font-weight: $bold;
+  letter-spacing: 0.0313rem;
+  color: $theme-white;
+  padding: 0.8rem 1rem 1rem;
+  background-color: $theme-cyan;
+  border-bottom: solid 0.25rem $theme-light-cyan;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transform: scaleY(-1);
+  transition: all 0.5s;
 
-    &:focus {
-        top: 0;
-        transform: scaleY(1);
-    }
+  &:focus {
+    top: 0;
+    transform: scaleY(1);
+  }
 
-    &:active {
-        border-bottom-width: 0;
-    }
+  &:active {
+    border-bottom-width: 0;
+  }
 }
